@@ -1,0 +1,47 @@
+<div class="body-wrapper">
+<div class="background pt-3">
+  <div class="pages-container">
+      <h1>Harvesting</h1>
+  </div>
+  <ul class="nav nav-pills mb-3 list-inline tabs-underlined active" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active tab-underlined" id="pills-home-tab" href="#pills-home" data-toggle="pill" role="tab" aria-controls="pills-home" aria-selected="true">Vegetables</button>
+    </li>
+  </ul>
+</div>
+
+<div class="background-light">
+  <div class="harvesting-wraper mt-4 mx-4">
+    <% @crops.each do |crop| %>
+      <%= link_to patch_vegetable_path(@patch, crop.vegetable, instruction_type: 'harvesting'), class: 'vegetable-card-slider mb-3' do %>
+        <%= cl_image_tag(crop.vegetable.photo.key, width: 58, height: 58, crop: :fill, radius: 10)%>
+
+        <div class="vegetable-card-content">
+          <h5 class="font-size-h5"><%= crop.vegetable.name %></h5>
+          <% if crop.harvested? %>
+            <p>Already harvested</p>
+          <% elsif crop.days_until_harvest.zero? %>
+            <p>Ready to harvest!</p>
+          <% else %>
+            <p><%= pluralize(crop.days_until_harvest, 'day') %> until harvest</p>
+          <% end %>
+
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: <%= 100 - (crop.days_until_harvest * 100 / crop.vegetable.growing_length) %>%; background-color: #900B63;" aria-valuenow="<%= crop.days_until_harvest %>" aria-valuemin="0" aria-valuemax="<%= crop.vegetable.growing_length %>"></div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<% if params[:harvested] %>
+  <% crop = Crop.find(params[:harvested]) %>
+  <div class="d-none js-harvest-popup">
+    Congratulations! You harvested <%= crop.vegetable.name %>!
+  </div>
+<% end %>
+
+<%= render 'shared/menu' %>
+</div>
+

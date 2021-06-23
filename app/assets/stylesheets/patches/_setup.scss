@@ -1,0 +1,107 @@
+.cards-container {
+  background-color: white;
+  display: flex;
+  flex-grow: 5;
+  flex-wrap: wrap;
+  margin: 20px 20px;
+}
+
+.card-body {
+  border-radius: 5%;
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+
+.card-img-top {
+  border-radius: 3%;
+  width: 125px;
+  height: 125px;
+}
+
+.card-body h5 {
+  font-size: 16px;
+  color: $dark-olive;
+  margin: 1px 2px;
+}
+
+.card-body h6 {
+  font-size: 14px;
+  color: $terracotta;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: $gray-dark;
+}
+
+.assembly-pic {
+  width: 262px;
+  height: 262px;
+  object-fit: cover;
+  margin-left: 56px;
+  border-radius: 10px;
+}
+
+.card-text-step {
+  text-align: left;
+  margin: 20px 20px;
+}
+
+.card-text-step h5 {
+  font-color: $gray-dark;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: DM Sans;
+  margin-top: -5px;
+}
+
+.card-text-step p {
+  font-color: $gray-dark;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: DM Sans;
+}
+
+.instructions-img {
+  border-radius: 5%;
+}
+
+.tabs-underlined .tab-underlined {
+  background-color: $oatmeal-med;
+  padding-bottom: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-family: "DM Mono", "Helvetica", "sans-serif";
+  border: none;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+ul.list-ellipse-class {
+  li {
+    margin-top: 32px;
+    list-style-type: none;
+    padding-left: 48px;
+    margin-left: -30px;
+  }
+
+  .list-bullets-1 {
+    background: asset-url('elipse-dark.png') no-repeat 0 0 transparent;
+  }
+
+  .list-bullets-2 {
+    background: asset-url('elipse-meddark.png') no-repeat 0 0 transparent;
+  }
+
+  .list-bullets-3 {
+    background: asset-url('elipse-med.png') no-repeat 0 0 transparent;
+  }
+
+  .list-bullets-4 {
+    background: asset-url('elipse-light.png') no-repeat 0 0 transparent;
+  }
+}

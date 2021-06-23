@@ -1,0 +1,49 @@
+.vegetable-card-slider {
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #F4F1ED;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(245, 238, 238, 0.94);
+  border-radius: 10px;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 16px;
+  color: $dark-olive;
+  justify-content: space-around;
+  padding: 12px;
+  transition: transform .3s;
+
+  &:active {
+    transform: scale(1.1, 1.1);
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.vegetable-card-slider .font-size-h5 {
+  font-weight: bold;
+  font-family: DM Sans;
+  margin-bottom: 4px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.vegetable-card-slider p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #91979d;
+  text-decoration: none;
+}
+
+
+.vegetable-card-slider .progress {
+   height: 3px;
+   width: 200px;
+}
+
+.vegetable-card-slider .progress .progress-bar {
+  height: 3px;
+  width: 200px;
+}

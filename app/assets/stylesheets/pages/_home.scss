@@ -1,0 +1,75 @@
+// Specific CSS for your home-page
+.pages-container-taller-2 h3 {
+  color: white;
+  font-family: DM Sans;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0px;
+  padding: 18px;
+  text-shadow: 1px 1px #0E0000;
+  margin-bottom: 16px;
+}
+
+.pages-container-taller-2 h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px #0E0000;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.pages-container-taller-2 {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url('man-in-garden-2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 438px;
+  margin-top: 0px;
+  padding-top: 75px;
+}
+
+.link-center {
+  text-align: center;
+  padding: 8px;
+  margin-top: 8px;
+  font-weight: 800;
+}
+
+.card-landing {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 325px;
+}
+
+.container-landing {
+  margin: 10px;
+}
+
+.card-landing h5 {
+  margin-top: 20px;
+}
+
+.footer {
+  background: $dark-olive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 0px 50px;
+  color: #d0cbcb;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  color: #d0cbcb;
+}

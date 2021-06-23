@@ -1,0 +1,41 @@
+.pages-container-taller {
+  background-color: $oatmeal-med;
+  height: 100vh;
+  padding: 32px;
+}
+
+.pages-container-taller h3 {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.pages-container-taller h1 {
+  font-size: 24px;
+  color: $terracotta;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.pages-container-taller p {
+  font-size: 14px;
+  color: $gray-dark;
+  text-align: justify;
+  margin-top: 32px;
+  margin-bottom: 26px;
+}
+
+.pages-container-taller .hi {
+  font-size: 14px;
+  color: $gray-dark;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.pages-container-taller h5 {
+  font-size: 16px;
+  color: $dark-olive;
+  text-align: left;
+  font-family: DM Mono;
+  font-weight: light;
+}
